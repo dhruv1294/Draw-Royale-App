@@ -1,6 +1,6 @@
-# draw_royale
+# Draw-Royale
 
-A new Flutter project.
+A cross-platform client similar to [scribbl.io](https://skribbl.io/).
 
 ## Getting Started
 
