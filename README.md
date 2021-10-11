@@ -4,9 +4,9 @@ A cross-platform client similar to [scribbl.io](https://skribbl.io/).
 
 ## Plans and Additional features
 
-- [] Base classic cross-platform scribbl game.
-- [] A new team game play feature for teams having seperate chats for discussions can be called as drawing dumbcharades.
-- [] Better UI with custom animations and sound.
+- [ ] Base classic cross-platform scribbl game.
+- [ ] A new team game play feature for teams having seperate chats for discussions can be called as drawing dumbcharades.
+- [ ] Better UI with custom animations and sound.
 
 ## Getting Started
 
