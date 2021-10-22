@@ -1,3 +1,4 @@
+import 'package:draw_royale/components/draw_board.dart';
 import 'package:flutter/material.dart';
 
 class PlayPage extends StatelessWidget {
@@ -8,12 +9,12 @@ class PlayPage extends StatelessWidget {
         appBar: AppBar(title: const Text("Play")),
         body: Column(
           children: [
-            Expanded(
+            const Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: SizedBox(
                   width: double.infinity,
-                  child: buildDrawArea(),
+                  child: DrawBoard(),
                 ),
               ),
             ),
@@ -29,13 +30,6 @@ class PlayPage extends StatelessWidget {
         itemBuilder: (_, i) => Padding(
           padding: const EdgeInsets.all(10),
           child: Text("Player: $i"),
-        ),
-      );
-
-  Widget buildDrawArea() => Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        child: const Center(
-          child: Text("Draw Area"),
         ),
       );
 }
