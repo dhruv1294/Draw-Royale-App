@@ -3,6 +3,7 @@ import 'package:draw_royale/pages/play_page.dart';
 import 'package:draw_royale/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get_navigation/src/routes/default_route.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -10,18 +11,19 @@ class RouteGenerator {
 
     switch (settings.name) {
       case "/":
-        return MaterialPageRoute(builder: (_) => const SplashPage());
+        return GetPageRoute(routeName: "/", page: () => const SplashPage());
       case "/home":
-        return MaterialPageRoute(builder: (_) => const HomePage());
+        return GetPageRoute(routeName: "/home", page: () => const HomePage());
       case "/play":
-        return MaterialPageRoute(builder: (_) => const PlayPage());
+        return GetPageRoute(routeName: "/play", page: () => const PlayPage());
       default:
         return _errorRoute();
     }
   }
 
-  static Route<dynamic> _errorRoute() => MaterialPageRoute(
-        builder: (_) => Scaffold(
+  static Route<dynamic> _errorRoute() => GetPageRoute(
+        routeName: "/error",
+        page: () => Scaffold(
           appBar: AppBar(title: const Text("Error")),
           body: const Center(
             child: Text("Error"),
