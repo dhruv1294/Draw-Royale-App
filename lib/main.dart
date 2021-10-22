@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
-        initialRoute: '/play',
+        initialRoute: '/',
         routes: {
-          '/': (context) => const Splash(),
+          '/': (context) => const SplashPage(),
           '/home': (context) => const Home(),
           '/play': (context) => const PlayPage(),
         },

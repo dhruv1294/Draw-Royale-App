@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Splash extends StatefulWidget {
-  const Splash({ Key? key }) : super(key: key);
+class SplashPage extends StatelessWidget {
+  const SplashPage({Key? key}) : super(key: key);
 
   @override
-  _SplashState createState() => _SplashState();
-}
-
-class _SplashState extends State<Splash> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.blue[900],
-      body: Text(
-       'Splash'
-      ),
-    );
-  }
+  Widget build(BuildContext context) => Scaffold(
+        body: Center(
+          child: Text(
+            "Draw Royale",
+            style: Theme.of(context).textTheme.headline4?.copyWith(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+        ),
+      );
 }
