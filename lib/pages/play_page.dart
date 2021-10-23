@@ -9,9 +9,9 @@ class PlayPage extends StatelessWidget {
         appBar: AppBar(title: const Text("Play")),
         body: Column(
           children: [
-            const Expanded(
+            Expanded(
               child: Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: SizedBox(
                   width: double.infinity,
                   child: DrawBoard(),
